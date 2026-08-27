@@ -12,7 +12,7 @@ CREATE TABLE usuarios (
 
 -- Insere um usuário padrão (E-mail: admin@familia.com | Senha: admin)
 INSERT INTO usuarios (nome, email, senha) 
-VALUES ('Administrador', 'admin@familia.com', '$2y$10$8kS2G8QJ3nO4k1O3O/7fEuWvI.k6I4/84ZpI4e10bWkZ1kQ6fQ4KO');
+VALUES ('Administrador', 'admin@familia.com', 'XXXXXXX');
 
 -- Tabela de Participantes (Família)
 CREATE TABLE participantes (
