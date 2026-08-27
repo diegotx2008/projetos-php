@@ -1,2 +1,12 @@
-database.php
-schema.sql
+# Dependências do Composer (NUNCA versione essa pasta)
+/vendor/
+
+# Arquivo de configuração com credenciais do banco
+/config/database.php
+
+# Arquivos de dados locais ou dumps sensíveis (Opcional, se você não quer subir o SQL)
+/schema.sql
+
+# Logs e arquivos de sistema
+*.log
+.DS_Store
