@@ -1,7 +1,7 @@
 <?php
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'gestao_evento');
-define('DB_USER', 'root');
+define('DB_NAME', 'gestao_eventosss');
+define('DB_USER', 'rootsss');
 define('DB_PASS', '');
 
 function getPDO() {
