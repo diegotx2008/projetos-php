@@ -1,14 +1,25 @@
 <?php
 
-declare(strict_types=1);
+namespace App\Core;
 
-namespace GeekPortal\Core;
+use Twig\Environment;
+use Twig\Loader\FilesystemLoader;
 
-final class View
+class View
 {
     public static function render(string $template, array $data = []): void
     {
-        extract($data, EXTR_SKIP);
-        require __DIR__ . '/../../views/' . $template . '.html.twig';
+        $loader = new FilesystemLoader(__DIR__ . '/../../views');
+        $twig = new Environment($loader, [
+            'cache' => false,
+            'debug' => true,
+        ]);
+
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+        $twig->addGlobal('session', $_SESSION);
+
+        echo $twig->render($template, $data);
     }
 }
