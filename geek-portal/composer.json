@@ -1,0 +1,15 @@
+{
+    "name": "geek-portal/geek-portal",
+    "description": "Portal de filmes, series e animes.",
+    "type": "project",
+    "require": {
+        "php": ">=8.1",
+        "twig/twig": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "GeekPortal\\": "src/",
+            "GeekPortal\\Config\\": "config/"
+        }
+    }
+}
