@@ -1,15 +1,16 @@
 {
-    "name": "geek-portal/geek-portal",
-    "description": "Portal de filmes, series e animes.",
+    "name": "geekportal/app",
+    "description": "Portal Geek de Filmes, Séries e Animes",
     "type": "project",
-    "require": {
-        "php": ">=8.1",
-        "twig/twig": "^3.0"
-    },
     "autoload": {
         "psr-4": {
-            "GeekPortal\\": "src/",
-            "GeekPortal\\Config\\": "config/"
+            "App\\": "src/"
         }
+    },
+    "require": {
+        "php": ">=8.2",
+        "twig/twig": "^3.8",
+        "guzzlehttp/guzzle": "^7.8",
+        "vlucas/phpdotenv": "^5.6"
     }
 }
